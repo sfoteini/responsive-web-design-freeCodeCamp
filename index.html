@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>HTML Documentation Page</title>	
+
+</head>
+
+
+
+<body>
+<nav id="navbar">
+  <header>HTML</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+    <li>
+      <a class="nav-link" href="#Nesting_elements">Nesting elements</a>
+    </li>
+    <li><a class="nav-link" href="#Block_versus_inline_elements">Block versus inline elements</a></li>
+    <li><a class="nav-link" href="#Empty_elements">Empty elements</a></li>
+    <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+    <li>
+      <a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a>
+    </li>
+    <li><a class="nav-link" href="#Whitespace_in_HTML">Whitespace in HTML</a></li>
+    <li>
+      <a class="nav-link" href="#Comments">Comments</a>
+    </li>
+    <li><a class="nav-link" href="#Summary">Summary</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+      <ul>
+        <li>Basic familiarity with using computers.</li>
+        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+        <li>A basic understanding of creating and managing files.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      <p>
+        To get started with writing HTML, open the Notepad and write the following HTML code:
+      </p>
+      <code>&lt!DOCTYPE html&gt
+&lthtml&gt
+&nbsp;&nbsp;&ltbody&gt
+&nbsp;&nbsp;&nbsp;&nbsp;&lth1&gtHello World!&lt/h1&gt
+&nbsp;&nbsp;&lt/body&gt
+&lt/html&gt</code>
+      <p>Save the file on your computer. Name the file "index.html" and open the saved HTML file in your browser.
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Anatomy_of_an_HTML_element">
+    <header>Anatomy of an HTML element</header>
+    <article>
+      <p>Let's further explore our heading element from the previous example. The anatomy of our element is:
+      </p>
+      <ul>
+        <li>
+          The <strong>opening tag</strong>: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+        </li>
+        <li>
+          The <strong>content</strong>: This is the content of the element. In this example, it is the paragraph text.
+        </li>
+        <li>
+          The <strong>closing tag</strong>: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends.
+        </li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Nesting_elements">
+    <header>Nesting elements</header>
+    <article>
+      <p>Elements can be placed within other elements. This is called <em>nesting</em>. If we wanted to state that this is my <strong>first</strong> HTML lesson, we could wrap the word first in a &ltstrong&gt element, which means that the word is to have strong(er) text formatting:
+      </p>
+      <code>&ltp&gtThis is my &ltstrong&gtfirst&lt/strong&gt HTML lesson.&lt/p&gt</code>
+      <p>There is a right and wrong way to do nesting. In the example above, we opened the <em>p</em> element first, then opened the <em>strong</em> element. For proper nesting, we should close the <em>strong</em> element first, before closing the <em>p</em>.
+      </p>
+      <p>The following is an example of the wrong way to do nesting:
+      </p>
+      <code class="wrong-code">&ltp&gtThis is my &ltstrong&gtfirst HTML lesson.&lt/p&gt&lt/strong&gt</code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Block_versus_inline_elements">
+    <header>Block versus inline elements</header>
+    <article>
+      <p>There are two important categories of elements to know in HTML: block-level elements and inline elements.
+      </p>
+      <ul>
+        <li>
+          Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent paragraphs, lists, navigation menus, or footers.
+        </li>
+        <li>
+          Inline elements are contained within block-level elements, and surround only small parts of the document’s content. An inline element will not cause a new line to appear in the document. It is typically used with text.
+        </li>
+      </ul>
+      <p>Consider the following example:
+      </p>
+      <code>&ltem&gtfirst&lt/em&gt&ltem&gtsecond&lt/em&gt&lt/em&gtthird&lt/em&gt
+&ltp&gtfourth&lt/p&gt&ltp&gtfifth&lt/p&gt&ltp&gtsixth&lt/p&gt</code>
+      <p><em>em</em> is an inline element. As you see below, the first three elements sit on the same line, with no space in between. On the other hand, <em>p</em> is a block-level element. Each p element appears on a new line, with space above and below.
+        </em>
+        <code class="preview">firstsecondthird
+fourth
+fifth
+sixth</code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Empty_elements">
+    <header>Empty elements</header>
+    <article>
+      <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document.
+      </p>
+      <code>&ltimg src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt</code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Attributes">
+    <header>Attributes</header>
+    <article>
+      <p>Elements can also have attributes. Attributes look like this:
+      </p>
+      <code>&ltp class=&quot;note&quot;&gtThis is my first HTML lesson.&lt/p&gt</code>
+      <p>Attributes contain extra information about the element that won't appear in the content. In this example, the <em>class</em> attribute is an identifying name used to target the element with style information.
+      </p>
+      <p>An attribute should have:</p>
+      <ul>
+        <li>A space between it and the element name.</li>
+        <li>The attribute name, followed by an equal sign.</li>
+        <li>An attribute value, wrapped with opening and closing quote marks.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Anatomy_of_an_HTML_document">
+    <header>Anatomy of an HTML document</header>
+    <article>
+      <p>
+        Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:
+      </p>
+      <code>&lt!DOCTYPE html&gt
+&lthtml&gt
+&nbsp;&nbsp;&lthead&gt
+&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gtMy test page&lt/title&gt
+&nbsp;&nbsp;&lt/head&gt
+&nbsp;&nbsp;&ltbody&gt
+&nbsp;&nbsp;&nbsp;&nbsp;&ltp&gtThis is my page&lt/p&gt
+&nbsp;&nbsp;&lt/body&gt
+&lt/html&gt</code>
+      <ul>
+        <li>The <em>doctype</em>: When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.
+        </li>
+        <li>
+          The <em>html</em> element wraps all the content on the page. It is sometimes known as the root element.
+        </li>
+        <li>
+          The <em>head</em> element acts as a container for eveything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more.
+        </li>
+        <li>
+          The <em>title</em> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.
+        </li>
+        <li>
+          The <em>body</em> element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+        </li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Whitespace_in_HTML">
+    <header>Whitespace in HTML</header>
+    <article>
+      <p>
+        No matter how much whitespace you use inside HTML element content (which can include one or more space character, but also line breaks), the HTML parser reduces each sequence of whitespace to a single space when rendering the code.
+      </p>
+      <p>
+        These two code snippets are equivalent:
+      </p>
+      <code>&ltp&gtThis is a paragraph.&lt/p&gt
+&ltp&gtThis&nbsp;&nbsp;&nbsp;&nbsp;is a
+&nbsp;&nbsp;paragraph.&lt/p&gt</code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Comments">
+    <header>Comments</header>
+    <article>
+      <p>
+        HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.
+      </p>
+      <code>&lt!-- This is a comment --&gt
+&ltp&gt This is a paragraph &lt/p&gt</code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Summary">
+    <header>Summary</header>
+    <article>
+      <p>
+        You made it to the end of the article! We hope you enjoyed your tour of the basics of HTML. At this point, you should understand what HTML looks like, and how it works at a basic level. You should also be able to write a few elements and attributes.
+      </p>
+      <p>All the documentation in this page is taken from
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN</a>
+      </p>
+    </article>
+  </section>
+</main>
+</body>
+
+</html>
