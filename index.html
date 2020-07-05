@@ -63,12 +63,13 @@
       <p>
         To get started with writing HTML, open the Notepad and write the following HTML code:
       </p>
-      <code>&lt!DOCTYPE html&gt
-&lthtml&gt
-&nbsp;&nbsp;&ltbody&gt
-&nbsp;&nbsp;&nbsp;&nbsp;&lth1&gtHello World!&lt/h1&gt
-&nbsp;&nbsp;&lt/body&gt
-&lt/html&gt</code>
+      <code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &nbsp;&nbsp;&lt;body&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;
+        &nbsp;&nbsp;&lt;/body&gt;
+        &lt;/html&gt;
+      </code>
       <p>Save the file on your computer. Name the file "index.html" and open the saved HTML file in your browser.
       </p>
     </article>
@@ -96,14 +97,16 @@
   <section class="main-section" id="Nesting_elements">
     <header>Nesting elements</header>
     <article>
-      <p>Elements can be placed within other elements. This is called <em>nesting</em>. If we wanted to state that this is my <strong>first</strong> HTML lesson, we could wrap the word first in a &ltstrong&gt element, which means that the word is to have strong(er) text formatting:
+      <p>Elements can be placed within other elements. This is called <em>nesting</em>. If we wanted to state that this is my <strong>first</strong> HTML lesson, we could wrap the word first in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:
       </p>
-      <code>&ltp&gtThis is my &ltstrong&gtfirst&lt/strong&gt HTML lesson.&lt/p&gt</code>
+      <code>&lt;p&gt;This is my &lt;strong&gt;first&lt;/strong&gt; HTML lesson.&lt;/p&gt;
+      </code>
       <p>There is a right and wrong way to do nesting. In the example above, we opened the <em>p</em> element first, then opened the <em>strong</em> element. For proper nesting, we should close the <em>strong</em> element first, before closing the <em>p</em>.
       </p>
       <p>The following is an example of the wrong way to do nesting:
       </p>
-      <code class="wrong-code">&ltp&gtThis is my &ltstrong&gtfirst HTML lesson.&lt/p&gt&lt/strong&gt</code>
+      <code class="wrong-code">&lt;p&gt;This is my &lt;strong&gt;first HTML lesson.&lt;/p&gt;&lt;/strong&gt;
+      </code>
     </article>
   </section>
 
@@ -122,14 +125,15 @@
       </ul>
       <p>Consider the following example:
       </p>
-      <code>&ltem&gtfirst&lt/em&gt&ltem&gtsecond&lt/em&gt&lt/em&gtthird&lt/em&gt
-&ltp&gtfourth&lt/p&gt&ltp&gtfifth&lt/p&gt&ltp&gtsixth&lt/p&gt</code>
+      <code>&lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;/em&gt;third&lt;/em&gt;
+        &lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;
+      </code>
       <p><em>em</em> is an inline element. As you see below, the first three elements sit on the same line, with no space in between. On the other hand, <em>p</em> is a block-level element. Each p element appears on a new line, with space above and below.
-        </em>
         <code class="preview">firstsecondthird
-fourth
-fifth
-sixth</code>
+          fourth
+          fifth
+          sixth
+        </code>
     </article>
   </section>
 
@@ -138,7 +142,8 @@ sixth</code>
     <article>
       <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document.
       </p>
-      <code>&ltimg src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt</code>
+      <code>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;
+      </code>
     </article>
   </section>
 
@@ -147,7 +152,8 @@ sixth</code>
     <article>
       <p>Elements can also have attributes. Attributes look like this:
       </p>
-      <code>&ltp class=&quot;note&quot;&gtThis is my first HTML lesson.&lt/p&gt</code>
+      <code>&lt;p class=&quot;note&quot;&gt;This is my first HTML lesson.&lt;/p&gt;
+      </code>
       <p>Attributes contain extra information about the element that won't appear in the content. In this example, the <em>class</em> attribute is an identifying name used to target the element with style information.
       </p>
       <p>An attribute should have:</p>
@@ -165,15 +171,16 @@ sixth</code>
       <p>
         Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:
       </p>
-      <code>&lt!DOCTYPE html&gt
-&lthtml&gt
-&nbsp;&nbsp;&lthead&gt
-&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gtMy test page&lt/title&gt
-&nbsp;&nbsp;&lt/head&gt
-&nbsp;&nbsp;&ltbody&gt
-&nbsp;&nbsp;&nbsp;&nbsp;&ltp&gtThis is my page&lt/p&gt
-&nbsp;&nbsp;&lt/body&gt
-&lt/html&gt</code>
+      <code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &nbsp;&nbsp;&lt;head&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My test page&lt;/title&gt;
+        &nbsp;&nbsp;&lt;/head&gt;
+        &nbsp;&nbsp;&lt;body&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is my page&lt;/p&gt;
+        &nbsp;&nbsp;&lt;/body&gt;
+        &lt;/html&gt;
+      </code>
       <ul>
         <li>The <em>doctype</em>: When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.
         </li>
@@ -202,9 +209,10 @@ sixth</code>
       <p>
         These two code snippets are equivalent:
       </p>
-      <code>&ltp&gtThis is a paragraph.&lt/p&gt
-&ltp&gtThis&nbsp;&nbsp;&nbsp;&nbsp;is a
-&nbsp;&nbsp;paragraph.&lt/p&gt</code>
+      <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;p&gt;This&nbsp;&nbsp;&nbsp;&nbsp;is a
+        &nbsp;&nbsp;paragraph.&lt;/p&gt;
+      </code>
     </article>
   </section>
 
@@ -214,8 +222,9 @@ sixth</code>
       <p>
         HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.
       </p>
-      <code>&lt!-- This is a comment --&gt
-&ltp&gt This is a paragraph &lt/p&gt</code>
+      <code>&lt;!-- This is a comment --&gt;
+        &lt;p&gt; This is a paragraph &lt;/p&gt;
+      </code>
     </article>
   </section>
 
