@@ -3,7 +3,7 @@ These projects are made for the freeCodeCamp Responsive Web Design Certification
 ## Projects
 * Tribute Page: [Page](https://codepen.io/sfoteini/full/VweGZOK) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 * Survey Form: [Page](https://codepen.io/sfoteini/full/GRomQpN) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
-* Product Landing Page: TBA | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
+* Product Landing Page: [Page](https://codepen.io/sfoteini/full/bGEPbNr) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 * Technical Documentation Page: [Page](https://codepen.io/sfoteini/full/OJMOQvV) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 * Personal Portfolio: TBA | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
