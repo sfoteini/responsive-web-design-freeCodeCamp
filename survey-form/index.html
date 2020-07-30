@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <html lang="en">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey form ui created for the FreeCodeCamp's Responsive Web Design Certification.">
+  <title>Survey Form</title>
+</head>
+
+<body>
+<div class="container">
+  <div class="header">
+    <div class="column-header">
+      <h1 id="title">Learner Experience Survey</h1>
+        <p id="description">We would like to know a little more about your experience with the course. Thank you for taking the time to help us improve the platform.</p>
+      </div>
+
+      <div class="column-image">
+        <div id="image-div">
+          <img src="images/survey_icon.svg" width="400" height="400">
+        </div>
+    </div>
+  </div>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Employment Status</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your current status</option>
+        <option value="student">Student</option>
+        <option value="job-full">Employed Full Time</option>
+        <option value="job-part">Employed Part Time</option>
+        <option value="self-employed">Self-employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="retired">Retired</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+        <div class="form-group">
+      <p>Experience Level</p>
+      <select id="dropdown" name="experience" class="form-control" required>
+        <option disabled selected value>Select your relevant experience level</option>
+        <option value="junior">Junior (0-2 years experience)</option>
+        <option value="mid">Mid-level (2+ years experience)</option>
+        <option value="senior">Senior</option>
+        <option value="executive">Executive</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Overall, how would you rate the course?</p>
+      <label>
+        <input
+          name="user-rate"
+          value="excellent"
+          type="radio"
+          class="input-radio"
+          checked
+        />Excellent</label>
+      <label>
+        <input
+          name="user-rate"
+          value="very-good"
+          type="radio"
+          class="input-radio"
+        />Very good</label>
+
+      <label>
+        <input
+          name="user-rate"
+          value="good"
+          type="radio"
+          class="input-radio"
+        />Good</label>
+      
+      <label>
+        <input
+          name="user-rate"
+          value="fair"
+          type="radio"
+          class="input-radio"
+        />Fair</label>
+      
+      <label>
+        <input
+          name="user-rate"
+          value="poor"
+          type="radio"
+          class="input-radio"
+        />Poor</label>
+    </div>
+    
+     <div class="form-group">
+      <p>How useful were the course materials (readings, videos, assignments, etc)?</p>
+      <label>
+        <input
+          name="materials-rate"
+          value="extremely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Extremely useful</label>
+      <label>
+        <input
+          name="materials-rate"
+          value="very"
+          type="radio"
+          class="input-radio"
+        />Very useful</label>
+
+      <label>
+        <input
+          name="materials-rate"
+          value="somewhat"
+          type="radio"
+          class="input-radio"
+        />Somewhat useful</label>
+      
+      <label>
+        <input
+          name="materials-rate"
+          value="not-so"
+          type="radio"
+          class="input-radio"
+        />Not so useful</label>
+      
+      <label>
+        <input
+          name="materials-rate"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No useful at all</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Would you recommend the course to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved? (Check all that apply)
+      </p>
+
+      <label>
+        <input
+          name="prefer"
+          value="lectures"
+          type="checkbox"
+          class="input-checkbox"
+        />Lectures and videos</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="material"
+          type="checkbox"
+          class="input-checkbox"
+        />Instructional materials i.e. readings</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="assignments"
+          type="checkbox"
+          class="input-checkbox"
+        />Course assignments and projects</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="exams"
+          type="checkbox"
+          class="input-checkbox"
+        />Graded assignments and exams</label>
+     
+      <label>
+        <input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum</label>
+      
+      <label>
+        <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Courses</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here...">
+        </textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+ <section class="footer">
+    <p> Design & Development - Foteini Savvidou </p>
+  </section>
+
+</body>
+
+</html>
