@@ -1,4 +1,4 @@
-![Survey Form](/images/survey_preview.jpg)
+![Survey Form](images/survey_preview.jpg)
 
 # Learner Experience Survey Form
 A survey form UI created for the FreeCodeCamp Responsive Web Design Project: Build a survey form.<br/>
