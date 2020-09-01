@@ -48,6 +48,10 @@ img {
   display: block;
 }
 
+iframe {
+  border: 0;
+}
+
 /* Global Classes */
 
 .column-60 {
