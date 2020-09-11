@@ -3,12 +3,19 @@ html {
 }
 
 body {
-  font-family: Lato, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Lato', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   margin: 0;
   background-color: #fbfaf8;
   color: #37383a;
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 2.5rem;
+    line-height: 1.8;
+  }
 }
 
 h1 {
@@ -29,11 +36,23 @@ h1 {
   }
 }
 
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
 h2 {
   font-size: 3rem;
   font-family: "Libre Baskerville", serif;
   text-align: center;
   padding-bottom: 5rem;
+}
+
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 4rem;
+  }
 }
 
 blockquote {
@@ -42,6 +61,12 @@ blockquote {
   font-family: "Libre Baskerville", serif;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+@media (min-width: 1400px) {
+  blockquote {
+    font-size: 3rem;
+  }
 }
 
 ul {
@@ -65,7 +90,6 @@ a:visited {
 }
 
 #tribute-link {
-  font-size: 1.5rem;
   font-weight: 500;
   color: #fefefe;
   text-transform: uppercase;
@@ -145,6 +169,16 @@ img {
 .name-caption {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+@media (min-width: 1400px) {
+  .date-caption {
+    font-size: 1.5rem;
+  }
+  
+  .name-caption {
+    font-size: 2rem;
+  }
 }
 
 /* First row columns */
